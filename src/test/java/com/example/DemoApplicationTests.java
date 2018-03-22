@@ -34,6 +34,7 @@ public class DemoApplicationTests {
 			assertTrue( true );
 		}
     }
+    
     @Test
     public void testdivisionexecptionwithaletter() throws Exception
     {
@@ -47,12 +48,14 @@ public class DemoApplicationTests {
 			assertTrue( true );
 		}
     }
+    
     @Test
     public void testdivisionpar0() throws Exception
     {
         double res=DemoApplication.diviser(12,0);
         assertEquals(res,0.0,0);
     }
+    
     @Ignore
     @Test
     public void testdivisionnull() throws Exception
@@ -64,13 +67,13 @@ public class DemoApplicationTests {
     public void testaddition()
     {
         Integer res=DemoApplication.addition(6,30);
-        assertEquals(res,36);
+        assertEquals(res,(Integer)36);
     }
     
     @Test
     public void testsoustraction()
     {
         Integer res=DemoApplication.soustraire(3,2);
-        assertEquals(res,1);
+        assertEquals(res,(Integer)1);
     }
 }

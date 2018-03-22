@@ -38,4 +38,15 @@ public class DemoApplication {
     {
 		return a+b;
 	}
+   /**
+	 * C'est la methode qui sert a soustraire
+	 * @param a : c'es
+	 * @param b : c'est le diviseur
+	 * @return : c'est le resultat
+     */
+    public static Integer soustraire(Integer a,Integer b)
+    {
+		return a-b;
+	}
+	
 }

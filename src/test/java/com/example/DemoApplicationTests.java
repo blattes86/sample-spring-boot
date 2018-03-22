@@ -15,18 +15,18 @@ public class DemoApplicationTests {
 	}
 	
     @Test
-    public void testdivision()
+    public void testdivision() throws Exception
     {
         double res=DemoApplication.diviser(8,2);
         assertEquals(res,4.0,0);
     }
+    
     @Test
     public void testdivisionexecption() throws Exception
     {
 		try
 		{
 			double res=DemoApplication.diviser(null,2);
-			assertEquals(res,6.0,0);
 			assertTrue( false );
 		}
 		catch (Exception e)
@@ -35,14 +35,27 @@ public class DemoApplicationTests {
 		}
     }
     @Test
-    public void testdivisionpar0()
+    public void testdivisionexecptionwithaletter() throws Exception
+    {
+		try
+		{
+			double res=DemoApplication.diviser(6,1);
+			assertTrue( false );
+		}
+		catch (Exception e)
+		{
+			assertTrue( true );
+		}
+    }
+    @Test
+    public void testdivisionpar0() throws Exception
     {
         double res=DemoApplication.diviser(12,0);
         assertEquals(res,0.0,0);
     }
-    
+    @Ignore
     @Test
-    public void testdivisionnull()
+    public void testdivisionnull() throws Exception
     {
         double res=DemoApplication.diviser(null,30);
     }

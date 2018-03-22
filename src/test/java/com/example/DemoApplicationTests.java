@@ -21,10 +21,18 @@ public class DemoApplicationTests {
         assertEquals(res,4.0,0);
     }
     @Test
-    public void testdivision2()
+    public void testdivisionexecption() throws Exception
     {
-        double res=DemoApplication.diviser(12,2);
-        assertEquals(res,6.0,0);
+		try
+		{
+			double res=DemoApplication.diviser(null,2);
+			assertEquals(res,6.0,0);
+			assertTrue( false );
+		}
+		catch (Exception e)
+		{
+			assertTrue( true );
+		}
     }
     @Test
     public void testdivisionpar0()
@@ -32,7 +40,7 @@ public class DemoApplicationTests {
         double res=DemoApplication.diviser(12,0);
         assertEquals(res,0.0,0);
     }
-    //@Ignore
+    @Ignore
     @Test
     public void testdivision4()
     {

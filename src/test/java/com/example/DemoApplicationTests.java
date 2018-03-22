@@ -40,11 +40,10 @@ public class DemoApplicationTests {
         double res=DemoApplication.diviser(12,0);
         assertEquals(res,0.0,0);
     }
-    @Ignore
+    
     @Test
-    public void testdivision4()
+    public void testdivisionnull()
     {
-        double res=DemoApplication.diviser(12,30);
-        assertEquals(res,18.0,0);
+        double res=DemoApplication.diviser(null,30);
     }
 }

@@ -59,4 +59,18 @@ public class DemoApplicationTests {
     {
         double res=DemoApplication.diviser(null,30);
     }
+    
+    @Test
+    public void testaddition()
+    {
+        Integer res=DemoApplication.addition(6,30);
+        assertEquals(res,36);
+    }
+    
+    @Test
+    public void testsoustraction()
+    {
+        Integer res=DemoApplication.soustraire(3,2);
+        assertEquals(res,1);
+    }
 }

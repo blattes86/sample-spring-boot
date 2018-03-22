@@ -63,7 +63,7 @@ public class DemoApplicationTests {
         double res=DemoApplication.diviser(null,30);
     }
     
-    @Test
+    @Test 
     public void testaddition()
     {
         Integer res=DemoApplication.addition(6,30);

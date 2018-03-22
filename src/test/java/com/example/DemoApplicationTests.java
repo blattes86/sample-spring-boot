@@ -27,12 +27,12 @@ public class DemoApplicationTests {
         assertEquals(res,6.0,0);
     }
     @Test
-    public void testdivision3()
+    public void testdivisionpar0()
     {
         double res=DemoApplication.diviser(12,0);
         assertEquals(res,0.0,0);
     }
-    @Ignore
+    //@Ignore
     @Test
     public void testdivision4()
     {

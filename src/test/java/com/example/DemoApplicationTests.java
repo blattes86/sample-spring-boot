@@ -76,4 +76,14 @@ public class DemoApplicationTests {
         Integer res=DemoApplication.soustraire(3,2);
         assertEquals(res,(Integer)1);
     }
+        public void testsoustraction2()
+    {
+        Integer res=DemoApplication.soustrairea(3,2);
+        assertEquals(res,(Integer)1);
+    }
+        public void testsoustraction3()
+    {
+        Integer res=DemoApplication.soustraire(3,2);
+        assertEquals(res,(Integer)1);
+    }
 }

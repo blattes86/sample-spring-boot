@@ -48,5 +48,8 @@ public class DemoApplication {
     {
 		return a-b;
 	}
-	
+	    public static Integer soustrairea(Integer a,Integer b)
+    {
+		return a-b;
+	}
 }
